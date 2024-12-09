@@ -1,0 +1,151 @@
+/* Hero Section */
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-slide {
+  position: relative;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0;
+  transform: scale(1.1);
+}
+
+.swiper-slide-active .hero-image {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.image-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.shop-now {
+  padding: 10px 30px;
+  font-size: 1.2rem;
+  background-color: #41413f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.shop-now:hover {
+  background-color: #625f5d;
+}
+
+/* Swiper Container */
+.hero-swiper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-image {
+    object-fit: cover;
+  }
+
+  .shop-now {
+    font-size: 1rem;
+  }
+}
+
+/* Navbar Section */
+.custom-navbar {
+  background-color: rgb(70, 68, 68) !important;
+}
+
+.custom-navbar .nav-link {
+  color: var(--navbar-text-color) !important;
+}
+
+.navbar-brand {
+  color: var(--navbar-brand-color) !important;
+  text-transform: var(--navbar-brand-text-transform);
+}
+
+.custom-navbar .nav-link:hover {
+  color: #ccc;
+}
+
+.custom-offcanvas {
+  width: 50%;
+}
+
+.custom-offcanvas .list-unstyled a {
+  /* color: var(--navbar-text-color) !important; */
+  text-decoration: none;
+}
+
+.offcanvas-body ul li a {
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  color: #333;
+  text-decoration: none;
+}
+
+.offcanvas-body ul li a:hover {
+  background-color: #191818;
+}
+
+.custom-offcanvas {
+  width: 50%; /* Customize width as needed */
+}
+
+.custom-offcanvas .list-unstyled a {
+  color: #1e1d1d;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+}
+
+.custom-offcanvas .list-unstyled a:hover {
+  background-color: #333;
+}
+

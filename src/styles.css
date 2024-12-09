@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --primary-color: #FF4F00;
+    --btns-color: #d76935;
+    --secondary-color: #6c757d;
+    --accent-color: #f8f9fa;
+    --background-color: #ffffff;
+    --navbar-bg-color: #E814EB;
+    --text-color: #333333;
+    --navbar-text-color: #ffffff;
+    --navbar-brand-color: #ffffff;
+    --navbar-brand-font-weight: bold;
+    --navbar-brand-text-transform: uppercase;
+    --navbar-bg-color: #343a40;
+    --sidebar-bg-color: #f8f9fa;
+    --bernard:#dc3545;
+  }

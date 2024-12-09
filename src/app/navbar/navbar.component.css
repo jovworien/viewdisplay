@@ -4,21 +4,16 @@
     width: 50%; 
   }
 
-  /* For larger screens, make the sidebar slightly smaller */
-  /* @media (min-width: 768px) {
-    .custom-offcanvas {
-      width: 25%; 
-    }
-  } */
 
   .custom-offcanvas .list-unstyled a {
     color: var(--navbar-text-color) !important; /* Use the variable for link text */
     text-decoration: none; /* Ensure no underline */
   }
  
-  .custom-navbar  {
-    background-color: var(--primary-color) !important;
+  .custom-navbar {
+    background-color: black !important;
   }
+  
   .custom-navbar .nav-link {
     color: var(--navbar-text-color) !important;
   }

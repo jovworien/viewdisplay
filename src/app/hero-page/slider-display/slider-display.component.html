@@ -1,4 +1,108 @@
-<p>slider-display works!</p>
+<!-- <p>slider-display works!</p> -->
 <!---just like the show own, transition on the image display
 when it loads, and when any is clicked, either this or swiper slide,
 but i want it different but similar concept-->
+<!-- Hero Section -->
+ <!-- Navbar -->
+
+ <div class="hero-container">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg custom-navbar">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My Website</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#sidebar"
+        aria-controls="sidebar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="/">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="pagesDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              <li><a class="dropdown-item" href="/grid-amountname">Supermarket</a></li>
+              <li><a class="dropdown-item" href="/nameof-productinimage">Clothes</a></li>
+              <li><a class="dropdown-item" href="/nameup-imageamtbelow">Hair</a></li>
+              <li><a class="dropdown-item" href="/image-starreviewname">Food</a></li>
+              <li><a class="dropdown-item" href="/furniture">Furniture</a></li>
+              <li><a class="dropdown-item" href="/native">Native Clothes</a></li>
+              <li><a class="dropdown-item" href="/spare-part">Spare Part</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/grid-amountname">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/contact">Contact</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <a class="btn btn-outline-light me-2" href="/login">Login</a>
+          <a class="btn btn-light" href="/register">Register</a>
+        </div>
+      </div>
+      
+    </div>
+  </nav>
+
+  <!-- Sidebar -->
+<!-- Sidebar -->
+<div class="offcanvas offcanvas-start custom-offcanvas" tabindex="-1" id="sidebar" aria-labelledby="sidebarLabel">
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="sidebarLabel">Sidebar Menu</h5>
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <ul class="list-unstyled">
+      <li><a href="#" class="text-decoration-none">Home</a></li>
+      <li><a href="#" class="text-decoration-none">About</a></li>
+      <li><a href="#" class="text-decoration-none">Services</a></li>
+      <li><a href="#" class="text-decoration-none">Contact</a></li>
+      <li><a href="#" class="text-decoration-none">Login</a></li>
+      <li><a href="#" class="text-decoration-none">Register</a></li>
+    </ul>
+  </div>
+</div>
+
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide" *ngFor="let image of images">
+          <img [src]="image.url" [alt]="image.alt" class="hero-image" />
+          <div class="image-overlay">
+            <h2 class="image-title">{{ image.alt }}</h2>
+            <p class="image-text">{{ image.text }}</p>
+            <button class="btn shop-now mt-4">Shop Now</button>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+</div>
+
+
+
+
+
+ 
+
+  
