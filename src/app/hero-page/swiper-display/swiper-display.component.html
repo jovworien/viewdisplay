@@ -1,2 +1,68 @@
-<p>swiper-display works!</p>
+<!-- <p>swiper-display works!</p> -->
 <!--search bar first before swiper below-->
+<header class="header">
+  <div class="logo">Startup</div>
+  <nav class="navlink">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="hamburger" (click)="toggleSidebar()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</header>
+
+<!-- Sidebar -->
+<div [class.active]="sidebarOpen" class="sidebar">
+  <button class="close-btn" (click)="toggleSidebar()">✕</button>
+  <ul class="sidebar-links">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</div>
+
+<main class="hero">
+  <div class="swiper hero-swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="../images/hero-images/herrr.jpeg" alt="Background Image 1" class="hero-image" />
+        <div class="hero-content">
+          <h2>Creative solutions for everyone</h2>
+          <h1>We craft unique business ideas</h1>
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">Discover crafto →</a>
+            <a href="#" class="btn btn-secondary">Get started now</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="swiper-slide">
+        <img src="../images/hero-images/herrr2.jpeg" alt="Background Image 1" class="hero-image" />
+        <div class="hero-content">
+          <h2>Creative solutions for everyone</h2>
+          <h1>We craft unique business ideas</h1>
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">Explore Now →</a>
+            <a href="#" class="btn btn-secondary">Get started now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Navigation -->
+    <!-- <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div> -->
+  </div>
+</main>
+
+
+
+
+

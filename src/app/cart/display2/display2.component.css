@@ -1,0 +1,80 @@
+.section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .table {
+    border: 1px solid #dee2e6;
+  }
+  
+  .thead-light {
+    background-color: #f8f9fa;
+    font-weight: bold;
+  }
+  
+  .cart-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 10px;
+  }
+  
+  input[type="number"] {
+    width: 80px;
+    text-align: center;
+  }
+  
+  .coupon-section {
+    background-color: #6b6868;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+  }
+  
+  #couponCode {
+    width: 180px;
+  }
+  
+  #applyCoupon {
+    background-color: #9ebe75;
+    /* border-color: #e3df0a; */
+  }
+  
+  /* Adding space between button and input on smaller screens */
+  @media (max-width: 576px) {
+    .coupon-section .form-control {
+      width: 100%;  /* Make the input take full width on smaller screens */
+    }
+  
+    .coupon-section .btn-secondary {
+      width: 100%;  /* Make the button take full width on smaller screens */
+      margin-top: 10px; /* Add spacing between input and button */
+    }
+  }
+  
+  /* #applyCoupon:hover {
+    background-color: #c4c10b;
+    border-color: #c4c10b;
+  } */
+  
+  .btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+    border-color: #004085;
+  }
+  

@@ -97,11 +97,12 @@
 
 /* Navbar Section */
 .custom-navbar {
-  background-color: rgb(70, 68, 68) !important;
+  background-color: rgb(200, 199, 199) !important;
 }
 
 .custom-navbar .nav-link {
-  color: var(--navbar-text-color) !important;
+  font-weight: bold;
+  /* color: #000 !important;; */
 }
 
 .navbar-brand {
@@ -109,9 +110,9 @@
   text-transform: var(--navbar-brand-text-transform);
 }
 
-.custom-navbar .nav-link:hover {
-  color: #ccc;
-}
+/* .custom-navbar .nav-link:hover {
+ color: #dbdbd635 !important;
+} */
 
 .custom-offcanvas {
   width: 50%;
@@ -147,5 +148,14 @@
 
 .custom-offcanvas .list-unstyled a:hover {
   background-color: #333;
+}
+
+@media (max-width: 992px) {
+  .navbar-brand {
+    margin-right: 0;
+  }
+  .navbar-toggler {
+    margin-left: 0;
+  }
 }
 

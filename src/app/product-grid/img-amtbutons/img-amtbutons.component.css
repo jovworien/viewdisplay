@@ -1,0 +1,137 @@
+/* Custom Styles */
+.card {
+  box-shadow: 0 4px 8px rgb(0,0,0, 0.2);
+  transition: transform 0.2s;
+  padding: 20px; /* Adds space inside the card */
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-container {
+  height: 180px; /* Fixed height for uniform layout */
+  display: flex;
+  justify-content: center; /* Centers image horizontally */
+  align-items: center; /* Centers image */
+  margin-bottom: 20px; /* Space between image and text */
+}
+
+.card-img-top {
+  max-width: 100%; /* Ensures the image doesn't overflow */
+  max-height: 100%; /* Ensures the image fits inside the container */
+  object-fit: contain; /* Maintains aspect ratio */
+}
+
+.price {
+  font-weight: bold;
+  color: #007bff;
+}
+
+/* Button Group Alignment */
+.button-group {
+  display: flex;
+  justify-content: space-between; /* Aligns buttons to left and right */
+  margin-top: 10px;
+}
+
+.btn-secondary {
+  background-color: #e3df0a !important;
+}
+
+.button-group .buy-now {
+  background-color: #06721f; /* Green color for Buy Now */
+  color: #fff;
+}
+
+.button-group .add-to-cart {
+  background-color: #007bff; /* Blue color for Add to Cart */
+  color: #fff;
+}
+
+.button-group .add-to-cart:hover {
+  background-color: #0056b3;
+}
+
+.add-to-cart i {
+  margin-right: 5px; /* Adds spacing between icon and text */
+}
+
+/* Card container for the image */
+.card-img-container {
+  position: relative;
+  height: 180px; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  margin-bottom: 20px;
+}
+
+/* Style for the circles */
+.circle {
+  position: absolute; 
+  width: 70px; 
+  height: 70px; 
+  border-radius: 50%; 
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+}
+
+/* Green circle for the left */
+.green-circle {
+  background-color: rgb(76, 215, 76); 
+  top: 10px; 
+  left: 10px; 
+}
+
+/* Yellow circle for the right */
+.yellow-circle {
+  background-color: rgb(219, 219, 108); 
+  top: 10px; 
+  right: 10px; 
+  color: black; 
+}
+
+/* Ensure the image scales properly */
+.card-img-top {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Swiper container styling */
+.product-swiper {
+  position: relative;
+  width: 100%;
+  height: 180px; /* Ensure swiper has a fixed height */
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 10px; /* Adjust position */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #76d74f; /* Active color */
+}

@@ -1,1 +1,67 @@
-<p>display3 works!</p>
+<!-- <p>display3 works!</p> -->
+
+<div class="container py-5">
+    <!-- Section Title -->
+    <div class="section-title text-center mb-4">
+      <h2>Your Cart</h2>
+    </div>
+  
+    <div *ngIf="cartItems.length > 0; else emptyCart">
+      <!-- Cart Table -->
+      <div class="table-responsive">
+        <table class="table table-bordered">
+          <thead class="thead-light">
+            <tr>
+              <th>Product</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Total</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let item of cartItems">
+              <td>
+                <img [src]="item.image" alt="Product Image" class="cart-img me-2">
+                {{ item.name }}
+              </td>
+              <td>{{ item.price | currency }}</td>
+              <td>
+                <input type="number" [(ngModel)]="item.quantity" class="form-control" min="1" (change)="updateCart()">
+              </td>
+              <td>{{ item.price * item.quantity | currency }}</td>
+              <td>
+                <button class="btn btn-danger btn-sm" (click)="removeFromCart(item)">Remove</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+  
+      <!-- Cart Summary -->
+      <div class="d-flex justify-content-end mt-4">
+        <div>
+          <h4>Total: {{ calculateTotal() | currency }}</h4>
+          <button class="btn btn-primary">Proceed to Checkout</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Empty Cart Message -->
+    <ng-template #emptyCart>
+      <div class="text-center">
+        <p>Your cart is currently empty.</p>
+        <a routerLink="/products" class="btn btn-primary">Shop Now</a>
+      </div>
+    </ng-template>
+  </div>
+  
+  <!-- Coupon Code Section -->
+  <div class="coupon-section d-flex justify-content-between align-items-center mt-4 flex-wrap">
+    <div class="d-flex align-items-center mb-2 mb-sm-0">
+      <label for="couponCode" class="me-2">Coupon Code:</label>
+      <input type="text" id="couponCode" class="form-control" placeholder="Enter coupon code">
+    </div>
+    <button class="btn btn-secondary ms-sm-3" id="applyCoupon">Apply Coupon</button>
+  </div>
+  

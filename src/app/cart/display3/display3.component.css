@@ -1,0 +1,86 @@
+.section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .section-title h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title h2 {
+        font-size: 1.25rem;
+    }
+}
+
+.cart-img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.cart-item {
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.cart-item:hover {
+    transform: scale(1.05);
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.cart-item-subtotal {
+    font-weight: bold;
+    color: #333;
+}
+
+.coupon-section {
+    background-color: #6b6868;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+#couponCode {
+    width: 180px;
+}
+
+#applyCoupon {
+    background-color: #9ebe75;
+}
+
+@media (max-width: 576px) {
+    .coupon-section .form-control {
+        width: 100%;
+    }
+
+    .coupon-section .btn-secondary {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+.btn-primary {
+    background-color: rgb(221, 168, 71) !important;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}

@@ -1,4 +1,98 @@
-<p>video-display works!</p>
+<!-- <p>video-display works!</p> -->
 <!--A video of the company or brand, get any clothing brand video on
 youtube, have an overlay with low opacity over the video and add write up,
 60vh of the screen height on smaller screens-->
+
+
+<nav class="navbar navbar-expand-lg custom-navbar">
+  <div class="container-fluid d-flex justify-content-between align-items-center">
+    <!-- Custom Toggle Button -->
+    <button
+      class="custom-toggler d-lg-none order-1"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#sidebar"
+      aria-controls="sidebar"
+    >
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </button>
+
+    <!-- Navbar Brand -->
+    <a class="navbar-brand order-2 order-lg-1 ms-auto ms-lg-0" href="#">
+      <img src="../images/hero-images/logo.png" alt="Logo" style="height: 60px; width:60px;" />
+    </a>
+
+    <!-- Navbar Links -->
+    <div class="collapse navbar-collapse order-3" id="navbarNav">
+      <ul class="navbar-nav mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/services">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Login and Register Buttons -->
+      <div class="auth-buttons d-none d-lg-flex">
+        <a href="/login" class="btn btn-outline-primary me-2">Login</a>
+        <a href="/register" class="btn btn-primary">Register</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+  
+  
+  <div class="offcanvas offcanvas-start custom-offcanvas" id="sidebar" tabindex="-1" aria-labelledby="sidebarLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="sidebarLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <ul class="list-unstyled">
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/services">Services</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+
+  <section class="hero">
+    <div class="hero-container">
+      <video src="../video/hero-video/hero.mp4" autoplay muted loop></video>
+      <div class="hero-overlay">
+        <div class="hero-text">
+          <h1>Your Brand Name</h1>
+          <p>Elevate your style with premium clothing</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+<!-- <section class="brand-video-section">
+  <div class="video-overlay">
+    <video
+      class="brand-video-frame"
+      src="../video/hero-video/hero.mp4"
+      autoplay
+      muted
+      loop
+    ></video>
+    <div class="video-text-overlay">
+      <h2>Your Brand Story</h2>
+      <p>Discover the passion behind our clothing line.</p>
+    </div>
+  </div>
+</section> -->
