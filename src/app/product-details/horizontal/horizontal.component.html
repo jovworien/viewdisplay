@@ -21,14 +21,24 @@
         Made from high-quality materials, this hair product ensures durability and comfort for everyday use.
       </p>
 
-      <!-- Rating -->
-      <div class="rating mb-3">
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="fas fa-star"></i>
-        <i class="far fa-star"></i>
-        <span>(4.0)</span>
+      <!-- Icons and Rating -->
+      <div class="d-flex align-items-center mb-3">
+       
+        <!-- Rating -->
+        <div class="rating me-3">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <span>(4.0)</span>
+        </div>
+
+         <!-- Share and Love Icons -->
+         <div class="me-3">
+          <i class="fas fa-share me-3" title="Share"></i>
+          <i class="fas fa-heart love-icon" title="Love" (click)="toggleLoveIcon()"></i>
+        </div>
       </div>
 
       <!-- Quantity Selector -->
@@ -37,22 +47,20 @@
         <input type="number" id="quantity" class="form-control d-inline-block" style="width: 80px;" value="1" min="1">
       </div>
 
-    
-
-      <!-- New Buttons with Icons -->
+      <!-- Buttons -->
       <button class="btn btn-outline-primary me-3">
         <i class="fas fa-phone-alt"></i>
       </button>
       <button class="btn btn-outline-secondary me-3">
         <i class="fas fa-home"></i> 
       </button>
-
-        <!-- Buttons -->
-        <button class="btn btn-primary me-3">
-          <i class="fas fa-shopping-cart me-2"></i> Add to Cart
-        </button>
+      <button class="btn btn-primary me-3">
+        <i class="fas fa-shopping-cart me-2"></i> Add to Cart
+      </button>
     </div>
   </div>
 </div>
+
+
 
   

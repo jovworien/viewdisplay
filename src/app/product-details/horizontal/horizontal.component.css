@@ -74,3 +74,33 @@
   color: #fff;
 }
 
+.love-icon {
+  color: rgb(179, 164, 107);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.love-icon.liked {
+  color:  #ffa726;
+}
+
+.fas.fa-share {
+  color: #ffa726;
+  cursor: pointer;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating i {
+  color: gold;
+  margin-right: 5px;
+}
+
+.rating span {
+  font-size: 0.9rem;
+  color: #888;
+}
+

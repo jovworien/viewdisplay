@@ -1,0 +1,121 @@
+.product-detail-img {
+    max-height: 400px;
+    object-fit: contain;
+    margin-bottom: 20px;
+  }
+  
+  .product-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-price {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .product-description {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .rating {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rating i {
+    color: gold;
+    margin-right: 5px;
+  }
+  
+  .rating span {
+    font-size: 0.9rem;
+    color: #888;
+  }
+  
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+  }
+  
+  .quantity-selector input {
+    text-align: center;
+  }
+  
+  .btn-primary {
+    background-color: #ffa726; 
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #e6ae6a; 
+}
+
+  .btn-outline-primary {
+  color:  #ffa726;
+  border: 1px solid #ffa726;
+}
+
+.btn-outline-primary:hover {
+  background-color: #e6ae6a;
+  color: #fff;
+}
+
+.btn-outline-secondary {
+  color:  #ffa726;
+  border: 1px solid  #ffa726;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #e6ae6a;
+  color: #fff;
+}
+
+.love-icon {
+  color: rgb(179, 164, 107);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.love-icon.liked {
+  color:  #ffa726;
+}
+
+.fas.fa-share {
+  color: #ffa726;
+  cursor: pointer;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating i {
+  color: gold;
+  margin-right: 5px;
+}
+
+.rating span {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+
+
+.thumbnail-images img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+  }
+  
+  .thumbnail-images img.selected {
+    border-color: #ffa726;
+  }
+  

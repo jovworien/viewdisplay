@@ -1,1 +1,69 @@
-<p>four-inone works!</p>
+<!-- <p>four-inone works!</p> -->
+<div class="container py-5">
+    <!-- Section Title -->
+    <div class="section-title text-center mb-4">
+      <h2>Product Details</h2>
+    </div>
+  
+    <div class="row">
+      <!-- Product Image -->
+      <div class="col-md-6 text-center">
+        <img [src]="selectedProduct.image" alt="Good Hair" class="img-fluid product-detail-img" />
+        <div class="thumbnail-images mt-3">
+          <img 
+            *ngFor="let product of products"
+            [src]="product.image"
+            [class.selected]="product.image === selectedProduct.image"
+            (click)="changeMainProduct(product)"
+            alt="Thumbnail"
+            class="img-thumbnail"
+          />
+        </div>
+      </div>
+  
+      <!-- Product Details -->
+      <div class="col-md-6">
+        <h3 class="product-title">Good Hair</h3>
+        <p class="product-price">{{ selectedProduct.price }}</p>
+        <p class="product-description">{{ selectedProduct.description }}</p>
+  
+        <!-- Icons and Rating -->
+        <div class="d-flex align-items-center mb-3">
+          <!-- Rating -->
+          <div class="rating me-3">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <span>(4.0)</span>
+          </div>
+  
+          <!-- Share and Love Icons -->
+          <div class="me-3">
+            <i class="fas fa-share me-3" title="Share"></i>
+            <i class="fas fa-heart love-icon" title="Love" (click)="toggleLoveIcon()"></i>
+          </div>
+        </div>
+  
+        <!-- Quantity Selector -->
+        <div class="quantity-selector mb-3">
+          <label for="quantity" class="me-2">Quantity:</label>
+          <input type="number" id="quantity" class="form-control d-inline-block" style="width: 80px;" value="1" min="1" />
+        </div>
+  
+        <!-- Buttons -->
+        <button class="btn btn-outline-primary me-3">
+          <i class="fas fa-phone-alt"></i>
+        </button>
+        <button class="btn btn-outline-secondary me-3">
+          <i class="fas fa-home"></i>
+        </button>
+        <button class="btn btn-primary me-3">
+          <i class="fas fa-shopping-cart me-2"></i> Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+  
+  
