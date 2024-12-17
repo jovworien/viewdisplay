@@ -26,8 +26,6 @@ import { Display3Component } from './cart/display3/display3.component';
 import { Display4Component } from './cart/display4/display4.component';
 import { ThreeGridsComponent } from './check-out/three-grids/three-grids.component';
 import { DisplayVideoComponent } from './overall-view/display-video/display-video.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
 
 const routes: Routes = [
   // { path: '', component: LandingPageComponent }, // Default route
@@ -56,7 +54,7 @@ const routes: Routes = [
   { path: 'cart/display4', component: Display4Component },
   { path: 'check-out/three-grids', component: ThreeGridsComponent },
   { path: 'overall-view/display-video', component: DisplayVideoComponent },
-  { path: 'navbar', component: NavbarComponent },
+ 
   { path: '**', redirectTo: '' } // Fallback route
 ];
 

@@ -30,9 +30,9 @@ import { Display3Component } from './cart/display3/display3.component';
 import { Display4Component } from './cart/display4/display4.component';
 import { ThreeGridsComponent } from './check-out/three-grids/three-grids.component';
 import { DisplayVideoComponent } from './overall-view/display-video/display-video.component';
-import { LandingPageComponent } from './landing-page/landing-page.component';
+
 import { FooterComponent } from './footer/footer.component';
-import { NavbarComponent } from './navbar/navbar.component';
+
 
 @NgModule({
   declarations: [
@@ -63,9 +63,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     Display4Component,
     ThreeGridsComponent,
     DisplayVideoComponent,
-    LandingPageComponent,
     FooterComponent,
-    NavbarComponent
+   
   ],
   imports: [
     BrowserModule,
