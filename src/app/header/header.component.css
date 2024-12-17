@@ -1,42 +1,166 @@
-  /* Customize sidebar to cover half the screen width */
-  .custom-offcanvas {
-    width: 50%; 
-  }
+.custom-toggler {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 20px;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1000; 
+}
+
+.custom-navbar {
+  background-color: #FF4F00 !important; 
+}
+
+.custom-navbar .nav-link {
+  font-weight: bold;
+  color: #333 !important;
+}
 
 
+.auth-buttons {
+  margin-left: auto;
+}
 
-  .custom-offcanvas .list-unstyled a {
-    color: var(--navbar-text-color) !important; 
-    text-decoration: none; 
+.auth-buttons .btn {
+  font-size: 0.9rem;
+  padding: 8px 20px;
+  border-radius: 5px;
+}
+
+.custom-toggler:focus {
+  outline: none;
+}
+
+.custom-toggler .line {
+  height: 3px;
+  width: 100%;
+  background-color: #e5e0e0; /* Color for the lines */
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Reduce the width of the bottom line */
+.custom-toggler .line:nth-child(3) {
+  width: 70%; /* Adjust as needed, e.g., 60%, 50% */
+  margin-right: auto; /* Aligns it to the right */
+}
+
+
+/* Adjust size for larger screens */
+@media (min-width: 768px) {
+  .custom-toggler {
+    width: 40px;
+    height: 24px;
   }
- 
-  .custom-navbar  {
-    background-color: var(--primary-color) !important;
+
+  .custom-toggler .line {
+    height: 4px;
   }
+}
+
   .custom-navbar .nav-link {
-    color: var(--navbar-text-color) !important;
+    font-weight: bold;
+    color: #333 !important;
   }
-  .navbar-brand {
-    color: var(--navbar-brand-color) !important;
-    text-transform: var(--navbar-brand-text-transform);
+  
+
+  .action-buttons {
+    margin-left: auto;
   }
-
-  .custom-navbar .nav-link:hover {
-    color: #ccc; 
+  
+  .action-buttons .btn {
+    font-size: 0.9rem;
+    padding: 8px 20px;
+    border-radius: 5px;
   }
-
-
-  /* Styling sidebar links */
-  .offcanvas-body ul li a {
-    font-size: 18px;
-    padding: 10px;
-    display: block;
-    color: #333;
-    text-decoration: none;
+  
+  .search-button-sm {
+    padding-top: 10px;
   }
-
-  .offcanvas-body ul li a:hover {
-    background-color: #ddd;
+  
+  /* Responsive Behavior */
+  @media (max-width: 992px) {
+    .action-buttons {
+      display: none; /* Hide on smaller screens */
+    }
+  
+    .search-button-sm {
+      display: flex; /* Show search button at center */
+    }
   }
+  
+  
+  /* Responsive behavior */
+  @media (max-width: 992px) {
+    .auth-buttons {
+      display: none; 
+    }
+  }
+  
+ /* Sidebar */
+.custom-offcanvas {
+  width: 50%;
+  background-color: #FF4F00; 
+}
+
+.custom-offcanvas .list-unstyled a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
 
 
+
+/* Navbar */
+.custom-navbar {
+  background-color: #FF4F00 !important; /* Set background color to orange */
+}
+
+.custom-navbar .nav-link {
+  font-weight: bold;
+  color: white !important; 
+}
+
+
+
+/* Sidebar */
+.custom-offcanvas {
+  width: 50%;
+  background-color: #FF4F00; /* Set sidebar background color to orange */
+}
+
+.custom-offcanvas .list-unstyled a {
+  color: white; /* Make sidebar links white */
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+}
+
+.custom-offcanvas .list-unstyled a:hover {
+  color: white; /* Ensure hover color remains white */
+}
+
+/* Register Button */
+.auth-buttons .btn-primary {
+  background-color: white; /* Make register button background white */
+  color: #FF4F00 !important; /* Set text color to orange */
+}
+
+.auth-buttons .btn-outline-primary {
+  color: white !important; /* Make login button text white */
+  border-color: white; /* Make login button border white */
+}
+
+.auth-buttons .btn:hover {
+  background-color: #FF4F00 !important;
+  color: white !important; /* Keep white text on hover */
+  border-color: #FF4F00;
+}
+
+
+  

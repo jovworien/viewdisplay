@@ -53,7 +53,7 @@ const routes: Routes = [
   { path: 'cart/display3', component: Display3Component },
   { path: 'cart/display4', component: Display4Component },
   { path: 'check-out/three-grids', component: ThreeGridsComponent },
-  { path: 'overall-view/display-video', component: DisplayVideoComponent },
+  { path: '', component: DisplayVideoComponent },
  
   { path: '**', redirectTo: '' } // Fallback route
 ];
