@@ -1,0 +1,80 @@
+.bi {
+    display: inline-block;
+  }
+  
+  .btn-warning {
+    background-color: #ffc107 !important;
+  }
+  
+  button:focus {
+    outline: none;
+  }
+  
+  ul {
+    padding-left: 0;
+  }
+  
+  .custom-img {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .card {
+    border: none;
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+  }
+  
+  .card a {
+    font-size: 1rem;
+  }
+  
+  /* Hover Effects for Cards */
+  .card:hover {
+    transform: translateY(-10px);
+    transition: transform 0.3s ease;
+  }
+  
+  .card-body a:hover {
+    background-color: #ffac33;
+  }
+  
+  /* Section Title */
+  h1, h2 {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  /* Responsive Media Query */
+  @media (max-width: 768px) {
+    .text-center h1 {
+      font-size: 1.5rem;
+    }
+  
+    .card-body h5 {
+      font-size: 1.1rem;
+    }
+  
+    .card-body p {
+      font-size: 0.9rem;
+    }
+  }
+  

@@ -1,31 +1,7 @@
 <!-- <p>swiper-display works!</p> -->
 <!--search bar first before swiper below-->
-<header class="header">
-  <div class="logo">Startup</div>
-  <nav class="navlink">
-    <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="#">Services</a></li>
-      <li><a href="#">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="hamburger" (click)="toggleSidebar()">
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
-</header>
 
 <!-- Sidebar -->
-<div [class.active]="sidebarOpen" class="sidebar">
-  <button class="close-btn" (click)="toggleSidebar()">✕</button>
-  <ul class="sidebar-links">
-    <li><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-</div>
 
 <main class="hero">
   <div class="swiper hero-swiper">
