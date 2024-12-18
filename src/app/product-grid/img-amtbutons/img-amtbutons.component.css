@@ -31,21 +31,21 @@
 /* Button Group Alignment */
 .button-group {
   display: flex;
-  justify-content: space-between; /* Aligns buttons to left and right */
+  justify-content: space-between; 
   margin-top: 10px;
 }
 
 .btn-secondary {
-  background-color: #e3df0a !important;
+  background-color: #FF4F00 !important;
 }
 
 .button-group .buy-now {
-  background-color: #06721f; /* Green color for Buy Now */
+  background-color: #e2723e; 
   color: #fff;
 }
 
 .button-group .add-to-cart {
-  background-color: #007bff; /* Blue color for Add to Cart */
+  background-color: #FF4F00; 
   color: #fff;
 }
 
@@ -54,7 +54,7 @@
 }
 
 .add-to-cart i {
-  margin-right: 5px; /* Adds spacing between icon and text */
+  margin-right: 5px; 
 }
 
 /* Card container for the image */
@@ -85,7 +85,7 @@
 
 /* Green circle for the left */
 .green-circle {
-  background-color: rgb(76, 215, 76); 
+  background-color: rgba(0, 0, 0, 0.2); 
   top: 10px; 
   left: 10px; 
 }
