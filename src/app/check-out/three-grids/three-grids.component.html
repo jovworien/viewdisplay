@@ -1,91 +1,67 @@
 <!-- <p>three-grids works!</p> -->
 <div class="container py-5">
-    <!-- Section Title -->
-    <div class="section-title text-center mb-4">
-      <h2>Checkout</h2>
+  <!-- Section Title -->
+  <div class="section-title text-center mb-4">
+    <h2>Checkout</h2>
+  </div>
+
+  <div class="row">
+    <!-- Order Summary -->
+    <div class="col-md-6 mb-4">
+      <h4 class="mb-3">Order Summary</h4>
+      <div class="card p-3">
+        <div class="d-flex align-items-center mb-3">
+          <img src="../images/furniture/chair3.jpeg" alt="Good Hair" class="img-thumbnail me-3" style="width: 100px; height: 100px;">
+          <div>
+            <h5 class="mb-1">Good Hair</h5>
+            <p class="mb-1">₹1000</p>
+            <p class="mb-0">Quantity: 1</p>
+          </div>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between">
+          <h6>Subtotal</h6>
+          <h6>₹1000</h6>
+        </div>
+        <div class="d-flex justify-content-between">
+          <h6>Shipping</h6>
+          <h6>₹100</h6>
+        </div>
+        <hr>
+        <div class="d-flex justify-content-between">
+          <h5>Total</h5>
+          <h5>₹1100</h5>
+        </div>
+      </div>
     </div>
-  
-    <!-- Three-Grid Layout -->
-    <div class="row">
-      <!-- Cart Summary -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card shadow-sm border-0">
-          <div class="card-header bg-primary text-white">
-            <h5 class="mb-0">Cart Summary</h5>
-          </div>
-          <div class="card-body">
-            <ul class="list-unstyled">
-              <li class="d-flex justify-content-between mb-2">
-                <span>Good Hair</span><span>₹1000</span>
-              </li>
-              <li class="d-flex justify-content-between mb-2">
-                <span>Fine Hair</span><span>₹1200</span>
-              </li>
-              <li class="d-flex justify-content-between border-top pt-2">
-                <strong>Total</strong><strong>₹2200</strong>
-              </li>
-            </ul>
-            <button class="btn btn-secondary w-100 mt-3">Edit Cart</button>
-          </div>
+
+    <!-- Shipping Details -->
+    <div class="col-md-6">
+      <h4 class="mb-3">Shipping Details</h4>
+      <form>
+        <div class="mb-3">
+          <label for="fullName" class="form-label">Full Name</label>
+          <input type="text" class="form-control" id="fullName" placeholder="Enter your full name" required>
         </div>
-      </div>
-  
-      <!-- Billing Details -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card shadow-sm border-0">
-          <div class="card-header bg-primary text-white">
-            <h5 class="mb-0">Billing Details</h5>
-          </div>
-          <div class="card-body">
-            <form>
-              <div class="mb-3">
-                <label for="fullName" class="form-label">Full Name</label>
-                <input type="text" id="fullName" class="form-control" placeholder="Enter your full name" required>
-              </div>
-              <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
-              </div>
-              <div class="mb-3">
-                <label for="address" class="form-label">Address</label>
-                <textarea id="address" class="form-control" rows="3" placeholder="Enter your address" required></textarea>
-              </div>
-            </form>
-          </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
         </div>
-      </div>
-  
-      <!-- Payment Method -->
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="card shadow-sm border-0">
-          <div class="card-header bg-primary text-white">
-            <h5 class="mb-0">Payment Method</h5>
-          </div>
-          <div class="card-body">
-            <form>
-              <div class="form-check mb-2">
-                <input class="form-check-input" type="radio" name="paymentMethod" id="creditCard" checked>
-                <label class="form-check-label" for="creditCard">
-                  Credit/Debit Card
-                </label>
-              </div>
-              <div class="form-check mb-2">
-                <input class="form-check-input" type="radio" name="paymentMethod" id="paypal">
-                <label class="form-check-label" for="paypal">
-                  PayPal
-                </label>
-              </div>
-              <div class="form-check mb-3">
-                <input class="form-check-input" type="radio" name="paymentMethod" id="cashOnDelivery">
-                <label class="form-check-label" for="cashOnDelivery">
-                  Cash on Delivery
-                </label>
-              </div>
-              <button class="btn btn-primary w-100">Place Order</button>
-            </form>
-          </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone</label>
+          <input type="text" class="form-control" id="phone" placeholder="Enter your phone number" required>
         </div>
-      </div>
+        <div class="mb-3">
+          <label for="address" class="form-label">Shipping Address</label>
+          <textarea class="form-control" id="address" rows="3" placeholder="Enter your address" required></textarea>
+        </div>
+        <div class="d-flex justify-content-between">
+          <button type="button" class="btn btn-secondary">Back to Cart</button>
+          <button type="submit" class="btn btn-primary">Confirm Order</button>
+        </div>
+      </form>
     </div>
   </div>
+</div>
+
   

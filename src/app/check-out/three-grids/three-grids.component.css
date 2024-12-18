@@ -1,70 +1,37 @@
-/* Section Title */
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-thumbnail {
+  object-fit: cover;
+}
+
 .section-title {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  /* Card Styles */
-  .card {
-    border-radius: 10px;
-    overflow: hidden;
-  }
-  
-  .card-header {
-    border-bottom: 1px solid #ddd;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  
-  .card-body ul {
-    padding-left: 0;
-  }
-  
-  .card-body ul li {
-    font-size: 1rem;
-  }
-  
-  .card-body ul li strong {
-    font-weight: bold;
-  }
-  
-  /* Form Elements */
-  .form-label {
-    font-weight: bold;
-  }
-  
-  textarea, input[type="text"], input[type="email"], .form-check-input {
-    border-radius: 5px;
-    border: 1px solid #ced4da;
-  }
-  
-  /* Button Styles */
-  .btn {
-    padding: 10px 15px;
-    font-size: 1rem;
-  }
-  
-  .btn-secondary {
-    background-color: #6c757d;
-    border-color: #6c757d;
-    color: #fff;
-  }
-  
-  .btn-secondary:hover {
-    background-color: #5a6268;
-    border-color: #545b62;
-  }
-  
-  .btn-primary {
-    background-color: #007bff;
-    border-color: #007bff;
-    color: #fff;
-  }
-  
-  .btn-primary:hover {
-    background-color: #0056b3;
-    border-color: #004085;
-  }
-  
+  font-size: 2rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.btn-primary {
+  background-color: #ff4f00;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #b5592e;
+}
+
+.btn-secondary {
+  background-color: #888;
+  border: none;
+}
+
+.btn-secondary:hover {
+  background-color: #666;
+}
+
+form .form-label {
+  font-weight: bold;
+  color: #555;
+}

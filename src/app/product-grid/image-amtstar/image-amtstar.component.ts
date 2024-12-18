@@ -16,7 +16,7 @@ export class ImageAmtstarComponent {
       isLoved: false
     },
     {
-      name: 'Gown',
+      name: 'Chair and Table',
       image: '../images/furniture/chair2.jpeg',
       ratingValue: 3,
       rating: Array(5),
@@ -24,7 +24,7 @@ export class ImageAmtstarComponent {
       isLoved: false
     },
     {
-      name: 'Long leave',
+      name: 'Chair',
       image: '../images/furniture/chair2.jpeg',
       ratingValue: 4,
       rating: Array(5),
@@ -32,7 +32,7 @@ export class ImageAmtstarComponent {
       isLoved: false
     },
     {
-      name: 'Long Leave',
+      name: 'Bed',
       image: '../images/furniture/chair3.jpeg',
       ratingValue: 4,
       rating: Array(5),
