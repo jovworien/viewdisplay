@@ -42,14 +42,14 @@
   position: absolute;
   top: 10px;
   left: 10px;
-  background-color: orange;
+  background-color: #FF4F00;
   color: white;
   font-size: 14px;
   padding: 5px 10px;
   border-radius: 4px;
   font-weight: bold;
   z-index: 10;
-  display: block;  /* Ensure it's displayed properly */
+  display: block; 
 }
 
 .love-badge {
