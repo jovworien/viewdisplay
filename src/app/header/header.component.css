@@ -38,15 +38,15 @@
 .custom-toggler .line {
   height: 3px;
   width: 100%;
-  background-color: #e5e0e0; /* Color for the lines */
+  background-color: #e5e0e0; 
   border-radius: 2px;
   transition: all 0.3s ease;
 }
 
-/* Reduce the width of the bottom line */
+
 .custom-toggler .line:nth-child(3) {
-  width: 70%; /* Adjust as needed, e.g., 60%, 50% */
-  margin-right: auto; /* Aligns it to the right */
+  width: 70%; 
+  margin-right: auto; 
 }
 
 

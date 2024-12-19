@@ -68,7 +68,23 @@
     </div>
     <div class="offcanvas-body">
       <ul class="list-unstyled">
-        <li><a href="/">Home</a></li>
+        <li class="mb-2">
+          <a
+            class="d-flex align-items-center justify-content-between text-decoration-none"
+            data-bs-toggle="collapse"
+            href="#homeSubmenu"
+            role="button"
+            aria-expanded="false"
+            aria-controls="homeSubmenu"
+          >
+            Home <i class="fas fa-chevron-down"></i>
+          </a>
+          <ul class="collapse list-unstyled ps-3 mt-2" id="homeSubmenu">
+            <li><a href="/home1" class="text-decoration-none">Home 1</a></li>
+            <li><a href="/home2" class="text-decoration-none">Home 2</a></li>
+            <li><a href="/home3" class="text-decoration-none">Home 3</a></li>
+          </ul>
+        </li>
         <li><a href="/about">About</a></li>
         <li><a href="/services">Services</a></li>
         <li><a href="/contact">Contact</a></li>
